@@ -5,7 +5,7 @@ const App = () => {
 	const [data, setData] = useState(null);
 
 	const download = async () => {
-		const downloadedData = await axios.get(`https://notatnik-server-drnciyj3m-kacperksiezs-projects.vercel.app/`);
+		const downloadedData = await axios.get(`https://notatnik-server-7s2nint0b-kacperksiezs-projects.vercel.app/`);
 		setData(downloadedData.data);
 	};
 
@@ -16,7 +16,7 @@ const App = () => {
 		console.log(data);
 	}, [data]);
 
-	return <div>{data}</div>;
+	return <div>asd</div>;
 };
 
 export default App;
