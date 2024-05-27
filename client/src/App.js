@@ -5,7 +5,7 @@ const App = () => {
 	const [data, setData] = useState(null);
 
 	const download = async () => {
-		const downloadedData = await axios.get(`https://notatnik-server-7s2nint0b-kacperksiezs-projects.vercel.app/`);
+		const downloadedData = await axios.get(`http://localhost:80`);
 		setData(downloadedData.data);
 	};
 

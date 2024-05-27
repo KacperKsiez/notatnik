@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: '*' }));
 
 app.use('/', (req, res) => {
 	console.log('Ktoś się połączył');
